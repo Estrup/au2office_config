@@ -1,0 +1,5 @@
+name: Test app
+stacks:
+- name: main
+  configFile: docker-compose.yml
+  location: main
