@@ -1,0 +1,13 @@
+version: '3.8'
+
+volumes:
+  jsreport_data: {}
+
+services:  
+  jsreport:
+    image: jsreport/jsreport:3.1.1
+    restart: unless-stopped
+    volumes:
+      - jsreport_data:/jsreport 
+    ports:
+      - 5488:5488 
