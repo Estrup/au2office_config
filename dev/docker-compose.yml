@@ -11,3 +11,5 @@ services:
       - jsreport_data:/jsreport 
     ports:
       - 5488:5488 
+    environment:
+      test: "test"
